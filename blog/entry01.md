@@ -24,9 +24,12 @@
 * Finance (personal/corporate): N/A
 
 
+## Engineering Design Process:
+1) The problem was that I needed to find a way for kids young and old to have fun.
+2) I researched this problem by researching about the topic.
 
-
-
+## Skills:
+* I used certain skills to help me with my Freedom Project. I used researching to research about the topic and how to code everything. I had a bit of trouble making the sprite in the beginning, but I got the hang of it after a day. I also used the skill of organizing by organizing my resources and notes.
 
 
 
