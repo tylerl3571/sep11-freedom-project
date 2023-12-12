@@ -25,22 +25,122 @@
             // import kaboom lib
             import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 
-            // initialize kaboom context
-            kaboom();
+//             // initialize kaboom context
+            kaboom()
+            loadSprite("bean", "/image/froggy.jpeg")
 
-            // add a piece of text at position (120, 80)
-            add([
-                text("hello"),
-                pos(120, 80),
-            ]);
-            // load a sprite "bean" from an image
-loadSprite("bean", "image/froggy.jpeg")
+            setGravity(2400)
 
-// add something to screen
-add([
-    image("froggy"),
-    pos(80, 40),
+const player = add([
+    // List of components, each offers a set of functionalities
+    sprite("mark"),
+    pos(100, 200),
+    area(),
+    body(),
+    health(8),
+    // Plain strings are tags, a quicker way to let us define behaviors for a group
+    "player",
+    "friendly",
+    // Components are just plain objects, you can pass an object literal as a component.
+    {
+        dir: LEFT,
+        dead: false,
+        speed: 240,
+    },
 ])
+
+player.move(player.dir.scale(player.speed))
+})
+    onKeyPress("space", () => {
+        player.jump()
+})
+
+// player.onCollide("tree", () => {
+//     destroy(player)
+// })
+const JUMP_FORCE = 1320
+const WALK_SPEED = 10
+
+
+const Level([
+    "                          $",
+    "                          $",
+    "           $$         =   $",
+    "  %      ====         =   $",
+    "                      =    ",
+    "       ^^      = >    =   &",
+    "===========================",
+], {
+    "                          $",
+    "                 $        $",
+    "           $$    $    =   $",
+    "  %      ====    $    =   $",
+    "    $            $    =    ",
+    "   ^ ^^^^      = >    =   &",
+    "===========================",
+    // define the size of tile block
+    tileWidth: 32,
+    tileHeight: 32,
+    // define what each symbol means, by a function returning a component list (what will be passed to add())
+    tiles: {
+        "=": () => [
+            sprite("floor"),
+            area(),
+            solid(),
+        ],
+        "$": () => [
+            sprite("coin"),
+            area(),
+            pos(0, -9),
+        ],
+        "^": () => [
+            sprite("spike"),
+            area(),
+            "danger",
+        ],
+    }
+})
+
+// 	// generate a random point on screen
+// 	// width() and height() gives the game dimension
+	const x = rand(0, width())
+	const y = rand(0, height())
+
+// 	// add([
+// 		// sprite("ghosty"),
+// 		// pos(x, y),
+// 	// ])
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// add([
+//     sprite("froggy"),
+// ])
+//             // load a sprite "bean" from an image
+// loadSprite("bean", "image/froggy.jpeg")
+
+// // add something to screen
+
+// // add([
+// //     image("froggy"),
+// //     pos(80, 40),
+// // ])
 
             </script>
         <script>

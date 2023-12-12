@@ -51,7 +51,44 @@ player.onCollide("tree", () => {
 ```
 This destroys my sprite when it comes in contact with the "tree". One question I had was if I could make my sprite have an objective and have it move to other sprites.
 
+11/21
 
+I learned how to add a sprite into my game.
+I used the code:
+
+```js
+loadSprite("bean", "image/froggy.jpeg")
+```
+I loaded "froggy.jpeg" with a new file and added a picture inside. I used
+```js
+loadsprite()
+```
+to load my sprite in.
+
+12/11
+I learned how to make a level in Kaboom.js. I used the code:
+
+```js
+const level
+    "                          $",
+    "                          $",
+    "           $$         =   $",
+    "  %      ====         =   $",
+    "                      =    ",
+    "       ^^      = >    =   &",
+    "===========================",
+], {
+```
+
+I made this level from the tutorial and learned how to add jump force
+
+```js
+const JUMP_FORCE = 1320
+```
+this gives my sprite (also known as my character) the gravity to jump.
+The challenges I had was to get my code to work and I realized it wasn't working because I edited a parathesis out.
+I still have one question: How come my code still doesn't work? I've been trying to get it to work these past few days. I tried reverting it back to its original code, but it still doesn't work.
+I am going to try and get my code to work by asking Mr.Mueller.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
