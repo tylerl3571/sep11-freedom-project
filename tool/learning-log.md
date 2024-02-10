@@ -89,6 +89,12 @@ this gives my sprite (also known as my character) the gravity to jump.
 The challenges I had was to get my code to work and I realized it wasn't working because I edited a parathesis out.
 I still have one question: How come my code still doesn't work? I've been trying to get it to work these past few days. I tried reverting it back to its original code, but it still doesn't work.
 I am going to try and get my code to work by asking Mr.Mueller.
+
+1/22
+
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
