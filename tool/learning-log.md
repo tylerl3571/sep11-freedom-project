@@ -98,8 +98,19 @@ http-server
 ```
 my screen becomes blank and white and I can't see anything. My goal is to ask Mr.Mueller next next Monday about how to fix my code.
 
+3/4
+* I realized that my code was in the wrong place and I had some errors.
 
+* For example,I had
+```js
+const LEVEL([
 
+])
+```
+but after having help from my colleague, I realized that I had the wrong code and the code was supposed to be:
+```js
+
+```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

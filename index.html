@@ -25,21 +25,17 @@
             // import kaboom lib
             import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 
-//             // initialize kaboom context
-// add([
-    // sprite("froggy".jpeg),
-// ])
-//
-            // kaboom()
-//              loadSprite("bean", "/image/froggy.jpeg")
-//
+        
+             kaboom()
+              loadSprite("bean", "/image/froggy.jpeg")
+
 
             // load a sprite "bean" from an image
 loadSprite("bean", "image/froggy.jpeg")
- add([
-     image("froggy".jpeg),
-     pos(80, 40),
- ])
+//  add([
+//      image("froggy".jpeg),
+//      pos(80, 40),
+//  ])
             setGravity(2400)
 
 // const player = add([
@@ -73,7 +69,7 @@ const JUMP_FORCE = 1320
 const WALK_SPEED = 10
 
 
-const LEVEL([
+addLevel ([
     "                          $",
     "                          $",
     "           $$         =   $",
@@ -82,13 +78,13 @@ const LEVEL([
     "       ^^      = >    =   &",
     "===========================",
 ], {
-    "                          $",
-    "                 $        $",
-    "           $$    $    =   $",
-    "  %      ====    $    =   $",
-    "    $            $    =    ",
-    "   ^ ^^^^      = >    =   &",
-    "===========================",
+    // "                          $",
+    // "                 $        $",
+    // "           $$    $    =   $",
+    // "  %      ====    $    =   $",
+    // "    $            $    =    ",
+    // "   ^ ^^^^      = >    =   &",
+    // "===========================",
     // define the size of tile block
     tileWidth: 32,
     tileHeight: 32,
@@ -122,7 +118,7 @@ const LEVEL([
 // 		// pos(x, y),
 // 	// ])
 
-}
+
 
 
 
