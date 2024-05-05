@@ -63,6 +63,6 @@ represents the jump force of it. Together, the code would set the jump force to 
 ## Goals:
 * My goal for the winter break is to finish up writing my code so that it works and I can see it load instead of a white screen appearing.
 
-[Next](entry02.md)
+[Next](entry03.md)
 
 [Home](../README.md)
