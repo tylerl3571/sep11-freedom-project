@@ -44,6 +44,6 @@ makes it so it goes into the file image, and then picks out the image "froggy.jp
 
 ## Goals:
 * Ask Mr.Mueller on how to fix my code
-[Previous](entry02.md) | [Next](entry04.md)
+[Previous](entry03.md) | [Next](entry05.md)
 
 [Home](../README.md)
