@@ -74,7 +74,8 @@ loadSprite("spike", "/image/spike.png")
 loadSprite("grass", "/image/grass.png")
 loadSprite("portal", "/image/portal.png")
 
-setGravity(2400)
+
+setGravity(1200)
 
 const SPEED = 480;
 
@@ -87,6 +88,16 @@ const LEVELS = [
 	[
 		"@   $   >",
 		"=   =   =",
+	],
+	[
+		"                 >",
+		"                $ ",
+		"@             $ =",
+		"	     ^     =",
+	    "==  ==  == =",
+	],
+	[
+
 	],
 ]
 
@@ -138,7 +149,7 @@ scene("game", ({ levelIdx, score }) => {
 	const player = level.get("player")[0]
 
 	// Movements
-	onKeyPress("up", () => {
+	onKeyPress("space", () => {
 		if (player.isGrounded()) {
 			player.jump()
 		}
@@ -152,6 +163,12 @@ scene("game", ({ levelIdx, score }) => {
 		player.move(SPEED, 0)
 	})
 
+//	onKeyDown("up", () => {
+//		if (player.isGrounded()){
+//			getGravity() => 4
+//		}
+//	}
+
 	player.onCollide("danger", () => {
 		player.pos = level.tile2Pos(0, 0)
 		// Go to "lose" scene when we hit a "danger"
@@ -160,7 +177,7 @@ scene("game", ({ levelIdx, score }) => {
 
 	player.onCollide("coin", (coin) => {
 		destroy(coin)
-		play("score")
+		// play("score")
 		score++
 		scoreLabel.text = score
 	})
@@ -169,12 +186,17 @@ scene("game", ({ levelIdx, score }) => {
 	player.onUpdate(() => {
 		if (player.pos.y >= 480) {
 			go("lose")
+		} else if (player.pos.y <= 480){
+			const player = add([ // own code added
+	sprite("coin"),
+	pos(120, 80),
+	])
 		}
 	})
 
 	// Enter the next level on portal
 	player.onCollide("portal", () => {
-		play("portal")
+		// play("portal")
 		if (levelIdx < LEVELS.length - 1) {
 			// If there's a next level, go() to the same scene but load the next level
 			go("game", {
