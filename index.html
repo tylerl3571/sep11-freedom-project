@@ -68,11 +68,11 @@ for (let i = 0; i < 3; i++) {
 kaboom()
 
 // Load assets
-loadSprite("bean", "/image/bean.png")
-loadSprite("coin", "/image/coin.png")
-loadSprite("spike", "/image/spike.png")
-loadSprite("grass", "/image/grass.png")
-loadSprite("portal", "/image/portal.png")
+loadSprite("bean", "image/bean.png")
+loadSprite("coin", "image/coin.png")
+loadSprite("spike", "image/spike.png")
+loadSprite("grass", "image/grass.png")
+loadSprite("portal", "image/portal.png")
 
 
 setGravity(1200)
@@ -90,11 +90,11 @@ const LEVELS = [
 		"=   =   =",
 	],
 	[
-		"                 >",
-		"                $ ",
-		"@             $ =",
-		"	     ^     =",
-	    "==  ==  == =",
+		"             $$$$$",
+		"        ^    $$$$>",
+		"@       ^    $$$ =",
+		"	     ^        =",
+	    "==  ==  == == = ==",
 	],
 	[
 
@@ -209,7 +209,8 @@ scene("game", ({ levelIdx, score }) => {
 		}
 	})
 
-	// Score counter text
+	// Score counter s
+	text
 	const scoreLabel = add([
 		text(score),
 		pos(12),
