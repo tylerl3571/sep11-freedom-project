@@ -103,4 +103,5 @@ just to test it out and it worked, so I did the same for the coin and it finally
 * make new levels and complete coding
 [Previous](entry05.md) | [Next](entry07.md)
 [Slides](https://docs.google.com/presentation/d/1G3ZjP4-jbG2ulBKD0-Ql9yIFd0axMveVQnPDoENi8Eo/edit#slide=id.g2ddde1c7396_0_12)
+[Notes](https://docs.google.com/document/d/1IPp2tqAuj6heApVTQ6EOYjrvoBJGnad2UYQERMDC2sw/edit)
 [Home](../README.md)
